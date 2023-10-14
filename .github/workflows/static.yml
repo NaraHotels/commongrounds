@@ -43,4 +43,4 @@ jobs:
         destination: commongrounds
         skipUnchanged: true
         skipDirectories: .github|.well-known|configs|private-keys
-        test: true
+        test: false
