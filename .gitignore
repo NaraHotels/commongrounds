@@ -1,0 +1,8 @@
+**/*.ftpquota
+**/*.well-known
+
+**/cgi-bin
+**/_vti*
+
+
+
