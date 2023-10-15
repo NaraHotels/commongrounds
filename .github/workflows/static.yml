@@ -5,6 +5,8 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
+    paths:
+    - 'docs/**'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -37,6 +39,7 @@ jobs:
         password: ${{ secrets.FTP_PASS }}
         # optional
         port: ${{ secrets.FTP_PORT }}
+        source: docs
         destination: ${{ secrets.FTP_TARGET }}
         skipUnchanged: true
         skipDirectories: .github|.well-known|configs|private-keys
