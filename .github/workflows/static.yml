@@ -37,7 +37,6 @@ jobs:
         password: ${{ secrets.FTP_PASS }}
         # optional
         port: ${{ secrets.FTP_PORT }}
-        source: /
         destination: ${{ secrets.FTP_TARGET }}
         skipUnchanged: true
         skipDirectories: .github|.well-known|configs|private-keys
